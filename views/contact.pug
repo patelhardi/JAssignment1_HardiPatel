@@ -1,0 +1,31 @@
+extends layout
+
+block layout-content
+  div#content
+    h1 Contact Page 
+    form(method="post")
+      fieldset 
+        legend Contact Form 
+        div.row
+          div.col-25
+            label(for="name") Name:
+          div.col-75
+            input(type="text", id="name")
+        div.row
+          div.col-25
+            label(for="email") Email:
+          div.col-75
+            input(type="text", id="email")
+        div.row
+          div.col-25
+            label(for="inqury") Message:
+          div.col-75
+            textarea(id="inqury")
+        div.row
+          input(type="submit", value="Send")
+    div#container-2 
+      h2 Follow Us on: 
+      i(class="fab fa-facebook fa-3x")
+      i(class="fab fa-instagram fa-3x")
+      i(class="fab fa-twitter fa-3x")
+      i(class="fas fa-envelope fa-3x")
